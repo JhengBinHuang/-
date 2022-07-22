@@ -1,0 +1,35 @@
+.beverage{color: crimson;}
+.animal{color: khaki;}
+.background-black{background-color: black;}
+#starbuck{color: white; background-color: forestgreen;}
+[type]:hover{
+    background-color: grey; 
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    height:300px;
+    border:1px solid red;
+    justify-content:flex-end;
+    align-content:center;
+    
+}
+.container div{
+    padding: 10px;
+    width: 100px;
+    border:1px solid gray;
+    height:20px;
+}
+
+.box1{
+   
+}
+.box2{
+   
+}
+
+.box3{
+    
+}

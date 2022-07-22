@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript練習</title>
+   
+</head>
+<body style="text-align:center;">
+    <br>
+    <H1>JS DOM 各種寫法</H1>
+    <br>
+    <h2>範例1:按下按鈕顯示訊息</h2>
+    <br>
+    <input type="button" value="訊息1" onclick="message()">
+    <input type="button" value="訊息2" id="btn2">
+    <input type="button" value="訊息3" id="btn3">
+    <input type="button" value="訊息4" id="btn4">
+    <input type="button" value="訊息5" id="btn5">
+    
+    <br>
+
+    <p id="display"></p>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h2>背景顏色:</h2>
+    <select name="" id="color" onchange="change()">
+        <option value="transparent">無色</option>
+        <option value="lightblue">天空藍</option>
+        <option value="lightpink">櫻花粉</option>
+        <option value="limegreen">檸檬綠</option>
+
+    </select>
+
+    <script>
+        // 第一種寫法-Function分配法
+        function message(){
+            document.getElementById("display").innerHTML="method 1";
+        }
+
+        // 第二種寫法-物件分配法
+       document.getElementById("btn2").addEventListener("click",function(){
+            document.getElementById("display").innerHTML="method 2";
+        })
+
+        // 第三種寫法-物件分配法 函式精簡版
+        document.getElementById("btn3").addEventListener("click",()=>{
+            document.getElementById("display").innerHTML="method 3";
+        })
+
+        // 第四種寫法-物件分配法 更精簡版(DOM關係鏈)
+        document.getElementById("btn4").onclick=()=>{
+            document.getElementById("display").innerHTML="method 4";
+        }
+
+        // 第五種寫法-變數精簡法
+        const btn5= document.getElementById("btn5");
+        const show= document.getElementById("display");
+
+        function showfunction(){
+            show.innerHTML="method 5";
+        }
+        btn5.addEventListener('click',showfunction);
+
+        // 改背景顏色
+        // 方法一 Function分配法
+        // function change() {
+        //     document.body.style.background=document.getElementById("color").value;
+
+        // }
+        // 方法二 Function分配法
+        document.getElementById("color").addEventListener("change",function(){
+            document.body.style.background=document.getElementById("color").value;
+        })
+    </script>
+
+</body>
+</html>

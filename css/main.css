@@ -1,0 +1,227 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+    
+    @font-face {
+      font-family: 'AbelRegular';
+      src: url('/nftweb/fonts/abel-regular-webfont.eot');
+      src: url('/nftweb/fonts/abel-regular-webfont.eot') format('embedded-opentype'),  url('/nftweb/fonts/abel-regular-webfont.woff') format('woff'),  url('/nftweb/fonts/abel-regular-webfont.ttf') format('truetype'),  url('/nftweb/fonts/abel-regular-webfont.svg') format('svg');
+  }
+
+    body{
+      font-family: 'Noto Sans TC', sans-serif;
+      font-weight:900;
+    }
+
+    div.main{
+        /* width: 980px; */
+        margin: 0 auto;
+        margin-top: 30px;
+        width:100%;
+        max-width:1200px;
+    }
+
+    header{
+      text-align: center;
+    }
+
+    header img{
+      width: 200px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    nav{
+      margin-bottom:30px ;
+      border-top:1px solid #898001;
+      border-bottom:1px solid #898001;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin:0;
+      padding:0;
+      height: 80px;
+      font-size:20px;
+      display: flex;
+    }
+
+    nav>ul>li{
+      /* display: inline-block;
+      width: 33.3%; */
+      /* width: calc(100%/3); */
+      flex:1;
+      text-align: center;
+      
+    }
+
+    nav>ul>li>a{
+      text-decoration:none;
+      /* display:block; */
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+    }
+
+    nav>ul>li>a:hover{
+      background-color:rgba(139, 138, 138, 0.866)
+    }
+
+    nav>ul>li>a>span:first-child{
+      /* font-weight:bold; */
+      color:#000;
+    }
+
+    nav>ul>li>a>span:last-child{
+      /* font-weight:bold; */
+      color:#898001;
+    }
+
+    .index img{
+      width:100%;
+    }
+
+    .shop .item{
+      border: solid 1px #898001;
+      border-bottom: none;
+      padding:15px;
+      display: flex;
+    }
+
+    .shop .item:last-child{
+      border-bottom:solid 1px #898001;
+    }
+
+    .shop .item .left{
+      /* display:inline-block; */
+      /* flex-basis:20%; */
+      flex-basis:250px;
+      /* vertical-align:top ; */
+    }
+
+    .shop .item .center{
+      /* display:inline-block; */
+      flex-grow: 1  ;
+      flex-basis:38%;
+      vertical-align:top ;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .shop .item .right{
+      /* display:inline-block; */
+      /* flex-basis:38%; */
+      flex-basis:300px;
+      vertical-align:top ;
+      padding-top: 10px;
+    }
+
+/*7/18*/
+    .shop .item .left img{
+      width:100%;
+      flex-basis: auto;
+    }
+
+    .shop .item .center{
+      /* display: inline-block; */
+      flex-basis: 40%;
+      vertical-align:top;
+      margin-left:-4px;
+      padding:0 20px;
+    }
+
+    /* 福爾摩斯大對決 */
+    .shop .item .center h1{
+      font-size: 22px;
+      margin:0;
+    }
+
+    /* 建議售價 */
+    .shop .item .center p{
+      margin-top:120px;
+      color: #898001;
+      margin-bottom:0;
+      margin-top: auto  ;
+    }
+
+    /* 立即購買 */
+    .shop .item a.buy_now{
+      text-decoration:none;
+      background-color:#898001;
+      color: white;
+      padding:6px 12px;
+      border-radius:15px;
+    }
+    
+    .shop .item a.buy_now:hover{
+      background-color: #000 
+    }
+
+    /* 商品說明 */
+    .shop .item .right .goods-content{
+      border-bottom:1px solid #898001;
+      padding-bottom:10px;
+    } 
+
+    .shop .item .right .item-left{
+      display: inline-block;
+      width:70%;
+    }
+
+    .shop .item .right .item-left h2{
+      font-size:18px;
+      color: #898001;
+    }
+
+    .shop .item .right .item-left p{
+      font-size:14px;
+    }
+
+    .shop .item .right .item-right{
+      display: inline-block;
+      width:30%;
+      margin-left:-4px;
+      vertical-align:top;
+      text-align: right;
+      margin-top:20px;
+    }
+
+    @media(max-width:992px){
+      nav ul{
+        flex-direction: column;
+        height:auto
+      }
+      .shop .item{
+        border:none;
+        flex-direction: column;
+      }
+     .shop .item .left{
+      width:100%;
+     }
+     .shop .item .center{
+      width:100%;
+      padding:0;
+      margin-left:0;
+     }
+     .shop .item .center p{
+      margin-top:20px;
+     }
+     .shop .item .right{
+      width:100%;
+     }
+    }
+ 
+
+    
+
+
+    
