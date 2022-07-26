@@ -184,83 +184,100 @@ nav{
     width: 100%;
     padding-top: 10px;
     position: relative
-  }
-  .product_content .left{
-    width: 70%;
-    position: absolute;
-  }
-  .product_content .left .img_show{
-    background-color: #8A8000;
-    height: 380px;
-    margin-bottom: 12px;
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-  /*
-    -webkit-transition: background-image 0.2s;
-    transition: background-image 0.2s;
-  */
-  }
-  .product_content .left .img_list>div{
-    background-color: #8A8000;
-    width: 80px;
-    height: 60px;
-    margin-right: 4px;
-    display: inline-block;
-    background-size : 100% 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-  }
-  .product_content .left .img_list .active{
-    outline: 4px solid #8a8000;
-  }
-  .product_content .right{
-    margin-left: 73%;
-    font-size: 16px;
-    line-height: 20px;
-    width: 300px;
-  
-  }
-  .product_content .right .g1{
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .product_content .right .g2{
-    font-size: 24px;
-    line-height: 34px;
-    border-bottom: 2px solid #8A8000;
-    margin-bottom: 18px;
-    display: inline-block;
+    .left{
+      width: 70%;
+      position: absolute;
+    }
+    .left .img_show{
+      background-color: #8A8000;
+      height: 380px;
+      margin-bottom: 12px;
+      background-size:100% 100%;
+      background-repeat: no-repeat;
+    /*
+      -webkit-transition: background-image 0.2s;
+      transition: background-image 0.2s;
+    */
+    }
+    .left .img_list>div{
+      background-color: #8A8000;
+      width: 80px;
+      height: 60px;
+      margin-right: 4px;
+      display: inline-block;
+      background-size : 100% 100%;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    .left .img_list .active{
+      outline: 4px solid #8a8000;
+    }
+    .right{
+      margin-left: 73%;
+      font-size: 16px;
+      line-height: 20px;
+      width: 300px;
     
+    }
+    .right .g1{
+      font-size: 24px;
+      line-height: 34px;
+    }
+    .right .g2{
+      font-size: 24px;
+      line-height: 34px;
+      border-bottom: 2px solid #8A8000;
+      margin-bottom: 18px;
+      display: inline-block;
+      
+    }
+    .right .g3{
+      font-weight: 400;
+    }
+    .right .g33{
+      font-weight: 400;
+      margin-top: 25px;
+    }
+    .right .g4{
+      width: 120px;
+      height: 45px;
+      background-color: #8A8000;
+      border-radius: 13px;
+      text-align: center;
+      color: #ffffff;
+      line-height: 45px;
+      font-size: 22px;
+      margin-top: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block
+    }
+    .right .g4:hover{
+      background-color: black;
+   }
   }
-  .product_content .right .g3{
-    font-weight: 400;
-  }
-  .product_content .right .g33{
-    font-weight: 400;
-    margin-top: 25px;
-  }
-  .product_content .right .g4{
-    width: 120px;
-    height: 45px;
-    background-color: #8A8000;
-    border-radius: 13px;
-    text-align: center;
-    color: #ffffff;
-    line-height: 45px;
-    font-size: 22px;
-    margin-top: 25px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block
-  }
-  .product_content .right .g4:hover{
-     background-color: black;
-  }
-  .product_content .carousel-item{
+   .carousel-item{
     img{
       height: 400px;
       object-fit: cover;
     }
+  }
+
+  #carouselExampleIndicators{
+    button{
+      width: 80px;
+      &.active img{
+        border: 2px solid $color1;
+      }
+    }
+  }
+
+  .carousel-indicators{
+    justify-content: left;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    bottom: -30px;
   }
 
   footer{
@@ -290,6 +307,34 @@ nav{
       text-align: right;
     }
   }
+
+  .product_a {
+    width: 82px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #8A8000;
+    border-radius: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .product_a:hover{
+     background-color: black;
+  }
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+
+  
 /* @media (max-width:992px){
   nav ul{
     flex-direction: column;
