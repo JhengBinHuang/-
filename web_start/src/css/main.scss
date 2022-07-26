@@ -1,5 +1,8 @@
 $color1:#898001;
 
+$content_width : 900px;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -26,7 +29,7 @@ body{
   margin: 0 auto;
   padding-top: 30px;
   width: 100%;
-  max-width: 1200px;
+  max-width:$content_width;
 }
 header{
   text-align: center;
@@ -174,6 +177,33 @@ nav{
     background-color: #000
   }}
 
+  footer{
+    background-color: $color1;
+    height: 135px;
+    padding-top: 20px;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .wrap{
+      margin: 0 auto;
+      max-width: $content_width;
+    }
+    ul.footer_left{
+      width: 50%;
+      float: left;
+      li{
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+    .footer_right{
+      width: 50%;
+      float: right;
+      text-align: right;
+    }
+  }
 /* @media (max-width:992px){
   nav ul{
     flex-direction: column;
