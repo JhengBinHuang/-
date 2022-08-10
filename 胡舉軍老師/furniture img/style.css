@@ -1,0 +1,14 @@
+#hero{
+    background-color: rgb(23, 103, 19);
+    height: 700px;
+}
+.bradius{
+    border-radius: 30px;
+    margin-right: 8px;
+}
+#banner{
+    margin-top: 166px;
+}
+.bcir{
+    border-radius: 50%;
+}
